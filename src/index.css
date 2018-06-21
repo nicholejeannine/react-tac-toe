@@ -32,6 +32,15 @@ ol, ul {
     width: 34px;
 }
 
+.square.X {
+    background-color: lightcoral;
+    color: black;
+}
+.square.O {
+    background-color: cornflowerblue;
+    color: #ffffff;
+}
+
 .square:focus {
     outline: none;
 }

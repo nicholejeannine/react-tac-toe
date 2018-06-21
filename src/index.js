@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 function Square(props){
+    var style = "square " + props.value;
     return (
-        <button className="square" onClick={props.onClick}>{props.value}</button>
+        <button class={style} onClick={props.onClick}>{props.value}</button>
     );
 }
 
