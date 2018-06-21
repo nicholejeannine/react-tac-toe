@@ -36,7 +36,10 @@ class Board extends React.Component {
         let status;
         if (winner) {
             status = "Winner: " + winner;
-        } else {
+        }  else if (this.state.squares.filter(x => typeof x != 'object').length == 9){
+            status = "Cat's Game";
+        }
+         else {
            status = 'Next player ' + (this.state.xIsNext ? 'X' : 'O');
         }
         return (
